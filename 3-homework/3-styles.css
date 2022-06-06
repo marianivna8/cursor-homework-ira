@@ -433,14 +433,9 @@ header{
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
-    /* or 167% */
-    
-    
+   
     color: #FFFFFF;
-    
-    
-    /* Inside auto layout */
-    
+   
     flex: none;
     order: 0;
     flex-grow: 1;
@@ -457,8 +452,6 @@ header{
     
     background: #FFFFFF;
     border-radius: 8px;
-    
-    /* Inside auto layout */
     
     flex: none;
     order: 1;
