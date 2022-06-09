@@ -5,7 +5,7 @@
     background: #FFFFFF;
 }
 .header{
-    position: absolute;
+    
     width: 1440px;
     height: 500px;
     left: 0px;
@@ -14,7 +14,7 @@
     background: #ED4C5C;    
 }
 .header_text{
-    position: absolute;
+    
     width: 445px;
     height: 195px;
     left: 165px;
@@ -59,7 +59,7 @@
     top: 94px;
 }
 .foto_1{
-    position: absolute;
+    
     width: 383px;
     height: 267px;
     left: 691px;
@@ -70,7 +70,7 @@
     border-radius: 15px;
 }
 .foto_2{
-    position: absolute;
+   
     width: 383px;
     height: 267px;
     left: 841px;
@@ -81,7 +81,7 @@
     border-radius: 15px;
 }
 .foto_3{
-    position: absolute;
+    
     width: 445px;
     height: 311px;
     left: 735px;
@@ -91,42 +91,42 @@
     border-radius: 15px;
 }
 .header_link{
-    position: absolute;
+   
     width: 134px;
     height: 32px;
     left: 163px;
     top: 357px;
 }
 .logo_google{
-    position: absolute;
+    
     width: 32px;
     height: 32px;
     left: 0px;
     top: 0px;
 }
 .logo_apple{
-    position: absolute;
+    
     width: 32px;
     height: 32px;
     left: 55px;
     top: 0px;
 }
 .logo_windows{
-    position: absolute;
+    
     width: 24px;
     height: 24px;
     left: 110px;
     top: 4px;
 }
 .main{
-    position: absolute;
+   
     width: 1440px;
     height: 500px;
     left: 0px;
     top: 500px;
 }
 .left_text > h4 {
-    position: absolute;
+    
     width: 445px;
     height: 107px;
     left: 176px;
@@ -141,7 +141,7 @@
     color: #000000;
 }
 .left_text > p {
-    position: absolute;
+    
     width: 434px;
     height: 64px;
     left: 176px;
@@ -155,9 +155,7 @@
     color: #000000;
 }  
 .right_field{
-    position: absolute;
-    /*width: 540px;
-    height: 305px;*/
+
     left: 735px;
     top: 617px;
 }
@@ -272,24 +270,16 @@
     
     color: #FFFFFF;
 }
-
-.footer{
-    position: absolute;
+.footer {
     width: 1440px;
     height: 435px;
     left: 0px;
     top: 1045px;
     
     background: #FAFAFA;
-   
-    padding: 95px 165px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
 }
 .addrees{
-    position: absolute;
+    
     width: 259px;
     height: 264px;
     left: 161px;
@@ -329,7 +319,7 @@
     color: #101010;
 }
 .Services{
-    position: absolute;
+    
     width: 254px;
     height: 164px;
     left: 450px;
@@ -371,7 +361,7 @@
     color: #000000;
 }
 .Get_in_Touch{
-    position: absolute;
+    
     width: 122px;
     height: 128px;
     left: 734px;
@@ -433,12 +423,15 @@ a:link {
     top: 1244px;  
 }
 .Support{
+    display: inline;
+    align-items: flex-end;
     width: 96px;
     height: 22px;
     /*left: 1022px;*/
     top: 1130px;
 }
 .Support > h2 {
+    display: inline;
     width: 96px;
     height: 22px;
     left: 1022px;
@@ -454,6 +447,7 @@ a:link {
     text-align: left;
 }
 .Support > img {
+    display: inline;
     margin-top: 33px;
 
     width: 216px;
