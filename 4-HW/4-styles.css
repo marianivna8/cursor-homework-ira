@@ -1,30 +1,24 @@
-.body{
+body{
+    display: block;
     position: relative;
     width: 1440px;
     height: 1480px;
     background: #FFFFFF;
 }
-.header{
-    
+header{
+    display: flex;
     width: 1440px;
     height: 500px;
     left: 0px;
     top: 0px;
-    
+
     background: #ED4C5C;    
 }
-.header_text{
-    
-    width: 445px;
-    height: 195px;
-    left: 165px;
-    top: 122px;
-}
-.header_text > h1 {
+header h1 {
+    margin-top: 122px;
+    margin-left: 165px;
     width: 445px;
     height: 107px;
-    left: 165px;
-    top: 122px;
     
     font-family: 'Lato';
     font-style: normal;
@@ -34,11 +28,11 @@
     
     color: #FFFFFF;
 }
-.header_text > p {
+header p {
+    margin-top: 24px;
+    margin-left: 165px;
     width: 445px;
     height: 64px;
-    left: 165px;
-    top: 253px;
     
     font-family: 'Lato';
     font-style: normal;
@@ -51,26 +45,43 @@
     
     color: #FFFFFF;
 }
+.header_link{
+    margin-top: 43px;
+    margin-left: 163px;
+    width: 134px;
+    height: 32px;
+}
+.logo_apple{
+    margin-left: 10px;
+    margin-right: 10px;;
+    width: 32px;
+    height: 32px;
+}
+.logo_windows{
+    width: 24px;
+    height: 24px;
+    top: 4px;
+}
 .header_slider{
-    
+   
+    margin-top: 94px;
     width: 533px;
     height: 311px;
     left: 691px;
-    top: 94px;
 }
 .foto_1{
-    
+    position: absolute;
+    top: 116px;
+    left: 691px;
     width: 383px;
     height: 267px;
-    left: 691px;
-    top: 116px;
     
     background: url(.jpg), #C4C4C4;
     opacity: 0.5;
     border-radius: 15px;
 }
 .foto_2{
-   
+    position: absolute;
     width: 383px;
     height: 267px;
     left: 841px;
@@ -81,56 +92,27 @@
     border-radius: 15px;
 }
 .foto_3{
-    
+    position:absolute;
+    z-index: 3;
+    margin-left: 125px;
     width: 445px;
     height: 311px;
-    left: 735px;
-    top: 94px;
     
     background: url(.jpg), #C4C4C4;
     border-radius: 15px;
 }
-.header_link{
-   
-    width: 134px;
-    height: 32px;
-    left: 163px;
-    top: 357px;
-}
-.logo_google{
-    
-    width: 32px;
-    height: 32px;
-    left: 0px;
-    top: 0px;
-}
-.logo_apple{
-    
-    width: 32px;
-    height: 32px;
-    left: 55px;
-    top: 0px;
-}
-.logo_windows{
-    
-    width: 24px;
-    height: 24px;
-    left: 110px;
-    top: 4px;
-}
-.main{
-   
+main{
+    display: flex;
     width: 1440px;
     height: 500px;
     left: 0px;
     top: 500px;
 }
 .left_text > h4 {
-    
+    margin-left: 176px;
+    margin-top: 76px;
     width: 445px;
-    height: 107px;
-    left: 176px;
-    top: 617px;
+    top: 650px;
     
     font-family: 'Lato';
     font-style: normal;
@@ -141,11 +123,10 @@
     color: #000000;
 }
 .left_text > p {
-    
+    margin-left: 176px;
     width: 434px;
     height: 64px;
-    left: 176px;
-    top: 713px;
+    top: 600px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -155,7 +136,7 @@
     color: #000000;
 }  
 .right_field{
-
+    position: absolute;
     left: 735px;
     top: 617px;
 }
@@ -270,7 +251,9 @@
     
     color: #FFFFFF;
 }
-.footer {
+footer {
+    display: flex;
+    justify-content: flex-start;
     width: 1440px;
     height: 435px;
     left: 0px;
@@ -279,10 +262,10 @@
     background: #FAFAFA;
 }
 .addrees{
-    
+    margin-top: 85px;
+    margin-left: 161px;
     width: 259px;
     height: 264px;
-    left: 161px;
     top: 1130px;
 }
 .addrees > h2 {
@@ -319,10 +302,10 @@
     color: #101010;
 }
 .Services{
-    
+    margin-top: 85px;
+    margin-left: 30px;
     width: 254px;
     height: 164px;
-    left: 450px;
     top: 1130px;    
 }
 .Services > h2 {
@@ -361,10 +344,10 @@
     color: #000000;
 }
 .Get_in_Touch{
-    
+    margin-top: 85px;
+    margin-left: 30px;
     width: 122px;
     height: 128px;
-    left: 734px;
     top: 1130px;
 }
 .Get_in_Touch > h2 {
@@ -385,6 +368,7 @@
     color: #101010;   
 }
 .Get_in_Touch > a {
+    margin-top: 33px;
     width: 122px;
     height: 14px;
     left: 734px;
@@ -402,9 +386,9 @@ a:link {
   }
 .Get_in_Touch_number{
     margin-top: 11px;
+    left: 734px;
     width: 96px;
     height: 14px;
-    left: 734px;
     top: 1210px;
     
     font-family: 'Lato';
@@ -415,23 +399,23 @@ a:link {
     
     color: #121212;   
 }
-.Social{
-    margin-top: 21px;
-    width: 66px;
-    height: 14px;
-    left: 734px;
-    top: 1244px;  
-}
+
 .Support{
-    display: inline;
-    align-items: flex-end;
+    margin-top: 85px;
+    margin-left: 166px;
     width: 96px;
     height: 22px;
-    /*left: 1022px;*/
     top: 1130px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;  
+    
+    color: #101010;
 }
 .Support > h2 {
-    display: inline;
     width: 96px;
     height: 22px;
     left: 1022px;
@@ -447,7 +431,6 @@ a:link {
     text-align: left;
 }
 .Support > img {
-    display: inline;
     margin-top: 33px;
 
     width: 216px;
