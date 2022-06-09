@@ -1,0 +1,465 @@
+.body{
+    position: relative;
+    width: 1440px;
+    height: 1480px;
+    background: #FFFFFF;
+}
+.header{
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 0px;
+    
+    background: #ED4C5C;    
+}
+.header_text{
+    position: absolute;
+    width: 445px;
+    height: 195px;
+    left: 165px;
+    top: 122px;
+}
+.header_text > h1 {
+    width: 445px;
+    height: 107px;
+    left: 165px;
+    top: 122px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #FFFFFF;
+}
+.header_text > p {
+    width: 445px;
+    height: 64px;
+    left: 165px;
+    top: 253px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* or 20px */
+    
+    text-align: justify;
+    
+    color: #FFFFFF;
+}
+.header_slider{
+    
+    width: 533px;
+    height: 311px;
+    left: 691px;
+    top: 94px;
+}
+.foto_1{
+    position: absolute;
+    width: 383px;
+    height: 267px;
+    left: 691px;
+    top: 116px;
+    
+    background: url(.jpg), #C4C4C4;
+    opacity: 0.5;
+    border-radius: 15px;
+}
+.foto_2{
+    position: absolute;
+    width: 383px;
+    height: 267px;
+    left: 841px;
+    top: 116px;
+    
+    background: url(.jpg), #C4C4C4;
+    opacity: 0.5;
+    border-radius: 15px;
+}
+.foto_3{
+    position: absolute;
+    width: 445px;
+    height: 311px;
+    left: 735px;
+    top: 94px;
+    
+    background: url(.jpg), #C4C4C4;
+    border-radius: 15px;
+}
+.header_link{
+    position: absolute;
+    width: 134px;
+    height: 32px;
+    left: 163px;
+    top: 357px;
+}
+.logo_google{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 0px;
+}
+.logo_apple{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    left: 55px;
+    top: 0px;
+}
+.logo_windows{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 110px;
+    top: 4px;
+}
+.main{
+    position: absolute;
+    width: 1440px;
+    height: 500px;
+    left: 0px;
+    top: 500px;
+}
+.left_text > h4 {
+    position: absolute;
+    width: 445px;
+    height: 107px;
+    left: 176px;
+    top: 617px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    
+    color: #000000;
+}
+.left_text > p {
+    position: absolute;
+    width: 434px;
+    height: 64px;
+    left: 176px;
+    top: 713px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: justify;
+    color: #000000;
+}  
+.right_field{
+    position: absolute;
+    /*width: 540px;
+    height: 305px;*/
+    left: 735px;
+    top: 617px;
+}
+.right_field > div {
+    margin-bottom: 24px; 
+   
+}
+.FirstN{
+    padding-left: 31px;
+    margin: 0% ;
+    box-sizing: border-box;
+
+    width: 255px;
+    height: 60px;
+    left: 735px;
+    top: 617px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+}
+.LastN{
+    padding-left: 31px;
+    margin-left: 25px;
+    
+    
+    width: 255px;
+    height: 60px;
+    left: 1020px;
+    top: 617px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(19, 39, 67, 0.5);
+
+    box-sizing: border-box;
+    border: 1px solid #333333;
+    border-radius: 6px;
+}
+.PhoneN{
+    margin-bottom: 24px;
+    box-sizing: border-box;
+    padding-left: 31px;
+    width: 540px;
+    height: 60px;
+    left: 735px;
+    top: 701px;
+   
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: rgba(19, 39, 67, 0.5);
+}
+.Select{
+    display: block;
+    box-sizing: border-box;
+    width: 540px;
+    height: 60px;
+    left: 735px;
+    top: 785px;
+    padding-left: 31px;
+    border: 1px solid #333333;
+    border-radius: 6px;
+    font-family: 'Lato';
+    font-style: normal;
+    
+    font-size: 16px;
+    line-height: 19px;
+    
+    color: rgba(19, 39, 67, 0.5);
+}
+.button{
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    width: 160px;
+    height: 50px;
+    left: 735px;
+    top: 872px;
+    
+    background: #ED4C5C;
+    border: 1.5px solid #ED4C5C;
+    border-radius: 6px;
+}
+.button > p {
+    padding-top: 5px;
+    width: 92px;
+    height: 17px;
+    left: 769px;
+    top: 889px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 435px;
+    left: 0px;
+    top: 1045px;
+    
+    background: #FAFAFA;
+   
+    padding: 95px 165px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+}
+.addrees{
+    position: absolute;
+    width: 259px;
+    height: 264px;
+    left: 161px;
+    top: 1130px;
+}
+.addrees > h2 {
+    width: 65px;
+    height: 22px;
+    left: 166px;
+    top: 1130px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #101010;    
+}
+.addrees > p {
+    margin-top: 33px;
+    margin-bottom: 141px;
+
+    width: 254px;
+    height: 54px;
+    left: 166px;
+    top: 1185px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    color: #101010;
+}
+.Services{
+    position: absolute;
+    width: 254px;
+    height: 164px;
+    left: 450px;
+    top: 1130px;    
+}
+.Services > h2 {
+    width: 67px;
+    height: 22px;
+    left: 450px;
+    top: 1130px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    
+    color: #101010;
+}
+.Services > ul {
+    margin-top: 28px;
+    list-style: none;
+    padding: 0%;
+    width: 254px;
+    height: 114px;
+    left: 450px;
+    top: 1180px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    /* or 19px */
+    
+    text-transform: capitalize;
+    
+    color: #000000;
+}
+.Get_in_Touch{
+    position: absolute;
+    width: 122px;
+    height: 128px;
+    left: 734px;
+    top: 1130px;
+}
+.Get_in_Touch > h2 {
+    width: 101px;
+    height: 22px;
+    left: 734px;
+    top: 1130px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    margin-bottom: 33px;
+    text-align: center;
+    
+    color: #101010;   
+}
+.Get_in_Touch > a {
+    width: 122px;
+    height: 14px;
+    left: 734px;
+    top: 1185px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+a:link {
+    text-decoration: none;
+    color: #101010;
+  }
+.Get_in_Touch_number{
+    margin-top: 11px;
+    width: 96px;
+    height: 14px;
+    left: 734px;
+    top: 1210px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    
+    color: #121212;   
+}
+.Social{
+    margin-top: 21px;
+    width: 66px;
+    height: 14px;
+    left: 734px;
+    top: 1244px;  
+}
+.Support{
+    width: 96px;
+    height: 22px;
+    /*left: 1022px;*/
+    top: 1130px;
+}
+.Support > h2 {
+    width: 96px;
+    height: 22px;
+    left: 1022px;
+    top: 1130px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #101010;
+    text-align: left;
+}
+.Support > img {
+    margin-top: 33px;
+
+    width: 216px;
+    height: 31px;
+    left: 1028px;
+    top: 1185px;
+    
+    background: url(secure-p-1.png);
+}
