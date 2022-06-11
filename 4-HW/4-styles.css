@@ -1,55 +1,37 @@
 body{
     display: block;
     position: relative;
-    width: 1440px;
-    height: 1480px;
+    width: 100%;
+    height: 500px;
     background: #FFFFFF;
 }
-header{
+.section_1{
     display: flex;
-    width: 1440px;
+    justify-content: space-between;
     height: 500px;
-    left: 0px;
-    top: 0px;
-
     background: #ED4C5C;    
 }
-header h1 {
+.section_1 h1 {
     margin-top: 122px;
     margin-left: 165px;
-    width: 445px;
-    height: 107px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 43px;
-    
+    width: 50%;
+    font-size: 36px;    
     color: #FFFFFF;
 }
-header p {
-    margin-top: 24px;
+.section_1 p {
     margin-left: 165px;
     width: 445px;
-    height: 64px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 140%;
-    /* or 20px */
-    
     text-align: justify;
-    
     color: #FFFFFF;
 }
-.header_link{
-    margin-top: 43px;
-    margin-left: 163px;
+.section_link{
+    display: flex;
     width: 134px;
-    height: 32px;
+    margin-left: 161px;
+    margin-top: 40px;
+
 }
 .logo_apple{
     margin-left: 10px;
@@ -62,28 +44,21 @@ header p {
     height: 24px;
     top: 4px;
 }
-.header_slider{
-   
+.slider{
+    display: inline;
     margin-top: 94px;
-    width: 533px;
-    height: 311px;
-    left: 691px;
+    padding-left: 22px;
 }
 .foto_1{
     position: absolute;
     top: 116px;
     left: 691px;
-    width: 383px;
-    height: 267px;
-    
     background: url(.jpg), #C4C4C4;
     opacity: 0.5;
     border-radius: 15px;
 }
 .foto_2{
     position: absolute;
-    width: 383px;
-    height: 267px;
     left: 841px;
     top: 116px;
     
@@ -92,48 +67,29 @@ header p {
     border-radius: 15px;
 }
 .foto_3{
-    position:absolute;
-    z-index: 3;
-    margin-left: 125px;
+    position: absolute;
     width: 445px;
     height: 311px;
+    left: 735px;
+    top: 94px;
     
     background: url(.jpg), #C4C4C4;
     border-radius: 15px;
 }
-main{
-    display: flex;
-    width: 1440px;
+.left_text{
+    width: 100%;
     height: 500px;
-    left: 0px;
-    top: 500px;
+    color: #000000;
 }
 .left_text > h4 {
     margin-left: 176px;
     margin-top: 76px;
-    width: 445px;
-    top: 650px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 600;
     font-size: 36px;
-    line-height: 43px;
-    
-    color: #000000;
 }
 .left_text > p {
     margin-left: 176px;
     width: 434px;
-    height: 64px;
-    top: 600px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 140%;
-    text-align: justify;
-    color: #000000;
 }  
 .right_field{
     position: absolute;
@@ -220,6 +176,7 @@ main{
     color: rgba(19, 39, 67, 0.5);
 }
 .button{
+    cursor: pointer;
     margin-top: 27px;
     display: flex;
     justify-content: space-around;
@@ -254,189 +211,67 @@ main{
 footer {
     display: flex;
     justify-content: flex-start;
-    width: 1440px;
-    height: 435px;
-    left: 0px;
-    top: 1045px;
-    
+    width: 100%;
+    height: 435px;    
     background: #FAFAFA;
+    color: #101010;
+    font-family: 'Lato';
+    font-style: normal;
 }
 .addrees{
     margin-top: 85px;
     margin-left: 161px;
-    width: 259px;
-    height: 264px;
-    top: 1130px;
 }
-.addrees > h2 {
-    width: 65px;
-    height: 22px;
-    left: 166px;
-    top: 1130px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    
-    text-align: center;
-    
-    color: #101010;    
+.addrees h2{
+    font-size: 18px;;
 }
 .addrees > p {
     margin-top: 33px;
     margin-bottom: 141px;
-
     width: 254px;
-    height: 54px;
-    left: 166px;
-    top: 1185px;
-    
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 150%;
-    color: #101010;
 }
 .Services{
     margin-top: 85px;
-    margin-left: 30px;
-    width: 254px;
-    height: 164px;
-    top: 1130px;    
+    margin-left: 30px;   
 }
 .Services > h2 {
-    width: 67px;
-    height: 22px;
-    left: 450px;
-    top: 1130px;
-    
-    font-family: 'Lato';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    
-    color: #101010;
 }
 .Services > ul {
     margin-top: 28px;
     list-style: none;
     padding: 0%;
     width: 254px;
-    height: 114px;
-    left: 450px;
-    top: 1180px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
     line-height: 160%;
-    /* or 19px */
-    
-    text-transform: capitalize;
-    
-    color: #000000;
 }
 .Get_in_Touch{
     margin-top: 85px;
     margin-left: 30px;
-    width: 122px;
-    height: 128px;
-    top: 1130px;
+    font-size: 12px;
 }
 .Get_in_Touch > h2 {
-    width: 101px;
-    height: 22px;
-    left: 734px;
-    top: 1130px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    margin-bottom: 33px;
-    text-align: center;
-    
-    color: #101010;   
+    margin-bottom: 33px;  
 }
 .Get_in_Touch > a {
-    margin-top: 33px;
-    width: 122px;
-    height: 14px;
-    left: 734px;
-    top: 1185px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
     font-size: 12px;
-    line-height: 14px;
 }
 a:link {
     text-decoration: none;
     color: #101010;
   }
-.Get_in_Touch_number{
-    margin-top: 11px;
-    left: 734px;
-    width: 96px;
-    height: 14px;
-    top: 1210px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    
-    color: #121212;   
-}
-
 .Support{
     margin-top: 85px;
     margin-left: 166px;
-    width: 96px;
-    height: 22px;
-    top: 1130px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 22px;  
-    
-    color: #101010;
 }
 .Support > h2 {
-    width: 96px;
-    height: 22px;
-    left: 1022px;
-    top: 1130px;
-    
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
-    /* identical to box height */
-    color: #101010;
-    text-align: left;
 }
 .Support > img {
     margin-top: 33px;
-
-    width: 216px;
-    height: 31px;
-    left: 1028px;
-    top: 1185px;
-    
-    background: url(secure-p-1.png);
 }
