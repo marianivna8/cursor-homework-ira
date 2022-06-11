@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 body{
     position: relative;
     width: 1488px;
     height: 1430px;
     background-color: #E5E5E5;
-    cursor: pointer;
 }
 header{
     display: flex;
@@ -158,6 +156,7 @@ header{
     flex-grow: 0;
 }
 .A01-3{
+    cursor: pointer;
     margin-top: 18px;
     display: flex;
     flex-direction: row;
@@ -220,8 +219,10 @@ header{
     padding: 0px;
     gap: 8px;
     
-    width: 689px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
+    
+    background: url(image.png);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -262,6 +263,23 @@ header{
 .B01{
     margin-left: 24px;
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+    width: 560px;
+    height: 160px;
+    
+    
+    /* Inside auto layout */
+    
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.B01-1{
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -275,28 +293,14 @@ header{
     box-shadow: 0px 12px 24px -6px rgba(96, 96, 96, 0.15), 0px 0px 1px rgba(96, 96, 96, 0.1);
     border-radius: 16px;
     
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-.B01-1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 8px;
-    gap: 10px;
-    
-    width: 36px;
-    height: 36px;
-    
-    background: rgba(234, 76, 137, 0.1);
-    border-radius: 10px;
+    /* Inside auto layout */
     
     flex: none;
     order: 0;
     flex-grow: 0;
 }
 .B01-1 > img {
+    margin: 8px;
     width: 35px;
     height: 35px;
     
@@ -333,7 +337,7 @@ header{
     flex-grow: 1;
 }
 .B01-2{
-    border-style: none;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -368,7 +372,7 @@ header{
     flex-grow: 0;
 }
 .B01-3{
-    border-style: none;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -442,6 +446,7 @@ header{
     flex-grow: 1;
 }
 .B02 > button {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -457,23 +462,6 @@ header{
     flex: none;
     order: 1;
     flex-grow: 0;
-}
-.B02-2{
-    margin-top: 0%;
-    width: 29px;
-    height: 20px;
-    
-    font-family: 'Avenir LT Std';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    
-    color: #26262B;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0; 
 }
 .B02-color-text{
     color: #e7ac46;
@@ -634,6 +622,7 @@ header{
     flex-grow: 0;   
 }
 .C01-2 > button {
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -759,7 +748,7 @@ header{
     flex-grow: 0;
 }
 .C03-2-button1{
-    border-style: none;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -781,6 +770,7 @@ header{
     flex-grow: 1;
 }
 .C03-2-button1 > p {
+    cursor: pointer;
     width: 144px;
     height: 16px;
     
@@ -798,7 +788,7 @@ header{
     flex-grow: 1;
 }
 .C03-2-button2{
-    border-style: none;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -954,7 +944,7 @@ header{
 }
 .D01-2{
     margin-top: 32px;
-    border-style: none;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -1062,7 +1052,7 @@ header{
     flex-grow: 0;
 }
 .D02-2-button{
-    border-style: none;
+    cursor: pointer;
     display: flex;
     flex-direction: row;
     justify-content: center;
