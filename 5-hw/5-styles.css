@@ -70,6 +70,11 @@ input{
     outline: none;
     background-color:rgb(69, 68, 68);
     color: #A2A2A2;
+    margin-left: .1rem;
+}
+input image{
+   margin-right: 3px 3px 3px 5px;
+
 }
 .search-icon{
     padding-top: 5px;
