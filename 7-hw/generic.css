@@ -1,0 +1,10 @@
+.grid{
+    
+    max-width: 1440px;
+    max-height: 4512px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    padding-left: 60px;
+    border: 2px solid #1b1616;
+    justify-content: center;
+}

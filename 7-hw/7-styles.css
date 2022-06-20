@@ -1,0 +1,380 @@
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+}  
+.header { 
+    grid-area: 1 / 1 / 2 / 8; 
+    z-index: 2;
+    max-width: 1280px;
+    min-height: 52px;
+    margin-top: 25px;
+}
+.header_wrapper{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 136px;
+    height: 54px;
+    margin-right: 54px;
+}
+.topnav{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+a:not(:first-child){
+    text-decoration: none; 
+}
+a:not(:last-child){
+    margin-right: 40px;
+}
+.nav_1 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+}
+.email{
+    display: flex;
+    align-items: center;
+}
+.email img{
+    width: 40px;
+    height: 40px;
+}
+.email a{
+    margin-left: 10px;
+    height: 20px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;    
+}
+.btn_communication{
+    margin-left: 25px;
+    width: 218px;
+    height: 52px;
+    
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    border: none;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.blue { 
+    grid-area: 1 / 4 / 6 / 8;
+    background-color: blue;
+    z-index: 0;
+} 
+.img { 
+    grid-area: 2 / 3 / 6 / 8; 
+    width: 895px;
+    height: 473px;
+
+    filter: drop-shadow(0px 10px 20px rgba(17, 17, 17, 0.1));
+    border-radius: 10px 0px 0px 10px;
+    z-index: 5;
+} 
+.white { 
+    grid-area: 1 / 1 / 7 / 4;
+    background-color: #FFFFFF;
+    z-index: 0;
+}
+.title { 
+    grid-area: 2 / 1 / 6 / 3; 
+    width: 413px;
+    height: 296px;
+    display: flex;
+    flex-direction: column;
+}
+.title h1{
+    z-index: 6;
+    width: 413px;
+    height: 98px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
+    color: #111111;
+    margin-bottom: 20px;
+}
+.title p{
+    z-index: 4;
+    width: 413px;
+    height: 66px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
+    
+    color: #111111;
+    margin-bottom: 60px;
+}
+.btn_variant{
+    z-index: 4;
+    width: 251px;
+    height: 52px;
+
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+  
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    border: none;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    
+    text-align: center;
+    color: #FFFFFF;
+}
+.cards { 
+    grid-area: 6 / 1 / 8 / 8;
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    z-index: 6; 
+    margin-top: -80px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 305px;
+    height: 231px;
+
+    background: #FFFFFF;
+    border-radius: 10px;
+    filter: drop-shadow(0px 5px 20px rgba(17, 17, 17, 0.3));
+}
+.card img{
+    width: 81px;
+    height: 80px;
+    margin-bottom: 26px;
+}
+.card p{
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #111111;
+}
+.gallery { 
+    margin-top: 115px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "apartments apartments apartments apartments apartments apartments apartments"
+      "one_room one_room one_room one_room three_room three_room three_room"
+      "two_room two_room two_room five_room five_room five_room five_room"
+      "btn_revision btn_revision btn_revision btn_revision btn_revision btn_revision btn_revision";
+    width: 1280px;
+    height: 814px;
+}  
+.apartments { 
+    grid-area: apartments;
+    width: 320px;
+    height: 44px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #2B7AF1; 
+}
+.one_room { 
+    grid-area: one_room; 
+    background: url(./img/1room.svg);
+    border-radius: 10px;
+    /* background: rgba(17, 17, 17, 0.5); */
+    box-shadow: 0px 10px 20px rgba(17, 17, 17, 0.1);
+    width: 738px;
+    height: 300px;
+    padding-left: 40px;
+}
+.one_room h3{
+    margin-top: 116px;
+    margin-bottom: 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.one_room_info{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF; 
+    margin-bottom: 24px;  
+}
+.price{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.address_one_room{
+    display: flex;
+    justify-content: flex-start;
+    z-index: 3;
+}
+.address_one_room img{
+    width: 22px;
+    height: 22px;
+    z-index: 2;
+}
+.address_one_room button{
+    margin-left: 230px;
+    width: 126px;
+    height: 33px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+.three_room { 
+    grid-area: three_room; 
+    background: url(./img/3room.png);
+    border-radius: 10px;
+    width: 522px;
+    height: 300px;
+    padding-left: 40px;
+}
+.three_room h3{
+    margin-top: 116px;
+    margin-bottom: 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+.address_three_room{
+    display: flex;
+    justify-content: flex-start;
+    z-index: 3;
+}
+.address_three_room img{
+    width: 22px;
+    height: 22px;
+    z-index: 2;
+}
+.three_room_info{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 522px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF; 
+    margin-bottom: 24px;  
+}
+.address_three_room button{
+    margin-left: 46px;
+    width: 126px;
+    height: 33px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px;
+    border: none;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+
+    text-align: center;
+    color: #FFFFFF;
+}
+.two_room { 
+    grid-area: two_room; 
+    width: 522px;
+    height: 300px;
+    background: url(./img/2room.png);
+    border-radius: 10px;
+}
+.five_room { 
+    grid-area: five_room;
+    background: url(./img/5room.png);
+    border-radius: 10px;
+    width: 738px;
+    height: 300px;
+}
+.btn_revision{
+    grid-area: btn_revision;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.btn_revision button{
+    align-content: center;
+    justify-content: center;
+    width: 304px;
+    height: 50px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+
+    box-shadow: 0px 10px 20px rgba(255, 122, 0, 0.2);
+    border-radius: 25px; 
+    border: none;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+  
+    text-align: center;
+    color: #FFFFFF;
+}
+  
