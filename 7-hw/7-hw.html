@@ -46,7 +46,7 @@
             <div class="title">
                 <h1> Оренда квартир в Березниках</h1>
                 <p>На тривалий термін <br>або подобово</p>
-                <button class="btn_variant"><span class=""> Дивитися варіанти</span></button>
+                <button class="btn_variant"> Дивитися варіанти</button>
             </div>
             <div class="cards">
                 <div class="card">
@@ -74,13 +74,15 @@
             <div class="apartments">Наші квартири</div>
 
             <div class="one_room">
-                <h3>Однокімнатна квартира</h3>
-                <p class="one_room_info">Доба <span class="price"> 1500₴ </span></p>
-                <div class="address_one_room">
-                    <img src="./img/Location_Icon.svg" alt="location">
-                    <p class="one_room_info">Березники, вул. Ювілейна 108</p>
-                    <button>Детальніше</button> 
-                </div>    
+                <div class="wrapper_room"> 
+                    <h3>Однокімнатна квартира</h3>
+                    <p class="one_room_info">Доба <span class="price"> 1500₴ </span></p>
+                    <div class="address_one_room">
+                        <img src="./img/Location_Icon.svg" alt="location">
+                        <p class="one_room_info">Березники, вул. Ювілейна 108</p>
+                        <button class="btn_details">Детальніше</button> 
+                    </div>  
+                </div>  
             </div>
 
             <div class="three_room">
@@ -89,7 +91,7 @@
                 <div class="address_three_room">
                     <img src="./img/Location_Icon.svg" alt="location">
                     <p class="three_room_info">Березники, вул.Гагаріна 89</p>
-                    <button>Детальніше</button> 
+                    <button class="btn_details">Детальніше</button> 
                 </div>   
             </div>
             <!-- доробити це дві кімнати -->
@@ -97,14 +99,45 @@
             <div class="five_room"></div>
             <div class="btn_revision">
                 <button>Переглянути всі квартири</button> 
-            </div>
-            
-            
+            </div>    
         </div>
-        <div class="about">
-            
 
+        <div class="container_about">
+            <div class="about_title">Про нас</div>
+            <div class="about_text">
+                Сьогодні «Домашній готель» — одна з найбільших у Пермському краї готельних мереж, що динамічно розширює географічне охоплення і підвищує якість сервісу.
+            </div>
+
+            <div class="customers">
+                <img src="./img/customers.svg" alt="customers">
+                <div class="quantity"> 
+                    <div class="about_title">40 + </div>
+                    <p>Клієнтів </p>
+                </div>
+            </div>
+
+            <div class="customers reviews">
+                <img src="./img/reviews.svg" alt="reviews">
+                <div class="quantity"> 
+                    <div class="about_title">100+</div>
+                    <p>Відгуків </p>
+                </div>
+            </div>
+
+            <div class="customers our-apartments">
+                <img src="./img/home.svg" alt="home">
+                <div class="quantity"> 
+                    <div class="about_title">9 </div>
+                    <p>Квартир </p>
+                </div>  
+            </div>
+            <div class="line">
+                <div class="hr1"></div>
+                <div class="hr"></div>
+                <div class="hr2"></div>
+            </div>
         </div>
+        
     </div>   
 </body>
 </html>

@@ -61,6 +61,7 @@ a:not(:last-child){
     color: #FFFFFF;    
 }
 .btn_communication{
+    cursor: pointer;
     margin-left: 25px;
     width: 218px;
     height: 52px;
@@ -138,6 +139,7 @@ a:not(:last-child){
     margin-bottom: 60px;
 }
 .btn_variant{
+    cursor: pointer;
     z-index: 4;
     width: 251px;
     height: 52px;
@@ -219,6 +221,7 @@ a:not(:last-child){
 
     color: #2B7AF1; 
 }
+
 .one_room { 
     grid-area: one_room; 
     background: url(./img/1room.svg);
@@ -352,12 +355,14 @@ a:not(:last-child){
     height: 300px;
 }
 .btn_revision{
+    cursor: pointer;
     grid-area: btn_revision;
     margin-top: 60px;
     display: flex;
     justify-content: center;
 }
 .btn_revision button{
+    cursor: pointer;
     align-content: center;
     justify-content: center;
     width: 304px;
@@ -377,4 +382,95 @@ a:not(:last-child){
     text-align: center;
     color: #FFFFFF;
 }
+/* 3 container */
+.container_about {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 100px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "about_title about_title about_title about_title about_title about_title about_title"
+      "about_text customers customers reviews reviews our-apartments our-apartments"
+      "about_text customers customers reviews reviews our-apartments our-apartments"
+      "line line line line line line line";
+    margin-top: 106px;
+}
+  
+.about_title { 
+    grid-area: about_title; 
+    margin-bottom: 10px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    color: #2B7AF1;
+}
+.about_text { 
+    margin-right: 99px;
+    grid-area: about_text; 
+    width: 400px;
+    height: 125px;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #111111;  
+} 
+.customers { 
+    grid-area: customers; 
+    display: flex;
+    margin-right: 100px;
+    width: 189px;
+    height: 88px;
+}
+.quantity{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.quantity p{
+    width: 81px;
+    height: 26px;
+    
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+
+    color: #111111;
+}
+  
+.reviews { grid-area: reviews; }
+  
+.our-apartments { grid-area: our-apartments; }
+  
+.line { 
+    grid-area: line;
+    display: flex;
+    max-width: 1280px;
+    height: 1px;
+    background: linear-gradient(89.77deg, #FF7A00 0.2%, #FFB039 99.82%);
+    border-radius: 1px;
+}
+.hr1{
+    width: 197px;
+    height: 1px;
+    
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+.hr2{
+    margin-left: 1099px;
+    width: 197px;
+    height: 1px;
+
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+  
   
