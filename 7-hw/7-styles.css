@@ -193,6 +193,7 @@ a:not(:last-child){
     text-align: center;
     color: #111111;
 }
+/* 2 block */
 .gallery { 
     margin-top: 115px; 
     display: grid;
@@ -226,11 +227,24 @@ a:not(:last-child){
     grid-area: one_room; 
     background: url(./img/1room.svg);
     border-radius: 10px;
-    /* background: rgba(17, 17, 17, 0.5); */
+    /* background: rgba(17, 17, 17, 0.5); 
+    background-size: contain;
+    background-repeat: no-repeat;*/
     box-shadow: 0px 10px 20px rgba(17, 17, 17, 0.1);
     width: 738px;
     height: 300px;
-    padding-left: 40px;
+    padding-left: 40px; 
+    z-index: 1;
+}
+.One-room:before {
+    content: '';
+    left: 0;
+    right: 0;
+    margin-top: -2em;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 17, 17, 0.5);
+    z-index: -1;
 }
 .one_room h3{
     margin-top: 116px;
@@ -270,6 +284,7 @@ a:not(:last-child){
     z-index: 2;
 }
 .address_one_room button{
+    cursor: pointer;
     margin-left: 230px;
     width: 126px;
     height: 33px;
@@ -324,6 +339,7 @@ a:not(:last-child){
     margin-bottom: 24px;  
 }
 .address_three_room button{
+    cursor: pointer;
     margin-left: 46px;
     width: 126px;
     height: 33px;
@@ -346,6 +362,35 @@ a:not(:last-child){
     height: 300px;
     background: url(./img/2room.png);
     border-radius: 10px;
+    padding-left: 40px;
+} 
+.btn_new{
+    margin-top: 20px;
+    cursor: pointer;
+    width: 133px;
+    height: 31px;
+    background: #5CB85C;
+    border-radius: 20px;
+    border: none;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px; 
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+.two_room h3{
+    margin-top: 65px;
+    margin-bottom: 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
 }
 .five_room { 
     grid-area: five_room;
@@ -353,6 +398,18 @@ a:not(:last-child){
     border-radius: 10px;
     width: 738px;
     height: 300px;
+    padding-left: 40px;
+    
+}
+.five_room h3{
+    margin-top: 116px;
+    margin-bottom: 65px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
 }
 .btn_revision{
     cursor: pointer;
