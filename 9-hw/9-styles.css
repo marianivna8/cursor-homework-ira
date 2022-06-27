@@ -103,11 +103,10 @@ main{
     margin: 0 auto; 
 }
 .there_img{
-    display: flex;
-    flex-direction: column;
+    position: relative;
 }
 .experience_img, .experience01, .experience02{
-    position: relative;
+    position: absolute;
 }
 .experience_img{
     max-width: 100%;
@@ -122,15 +121,13 @@ main{
     background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
 }
 .experience01{
-    position: absolute;
     margin-top: -300px;
     margin-left: 163px;
     max-width: 100%;
     z-index: 3;
 }
-#experience02{
+.experience02{
     max-width: 100%;
-    position: absolute;
     margin-top: -506px;
     margin-left: 269px;
     z-index: 2; 
