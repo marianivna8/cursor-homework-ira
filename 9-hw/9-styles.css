@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Product-Sans";
+    src: url(./fonts/Product\ Sans\ Bold\ Italic.ttf);
+    font-weight: 700;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    background: #F4F6F9;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+    height: auto;
+    background-size: cover;
+}
+.header{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    margin-left: 163px;
+}
+.header_content_left{
+    display: flex;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    padding-top: 63px;
+}
+.logo p{
+    width: 5%;
+    height: 30px;
+    font-family: 'Product Sans';
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.02em;
+    color: #5282F0;
+    margin-bottom: 133px;
+}
+.header h1{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin-bottom: 30px;
+}
+.header_content_left > p{
+    width: 70%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: #4F4F4F;
+    margin-bottom: 50px;
+}
+.btn_header svg:first-child{
+    margin-right: 36px;
+}
+.apple_icon {
+    fill: rgb(18, 18, 19);
+}
+.apple_icon:hover {
+    fill: #5282F0;
+    cursor: pointer;
+}
+.google_icon {
+    fill: rgb(18, 18, 19);
+}
+google_icon:hover {
+    fill: #5282F0;
+    cursor: pointer;
+}
+picture .img_header{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 49px;
+    z-index: 2;
+}
+
+/* section 2 */
+main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+}
+.experience{
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 66%;
+}
+.experience_left{
+    width: 56%;  
+    margin: 0 auto; 
+}
+.there_img{
+    display: flex;
+    flex-direction: column;
+}
+.experience_img, .experience01, .experience02{
+    position: relative;
+}
+.experience_img{
+    max-width: 100%;
+    height: auto;
+    z-index: 0; 
+}
+.experience_img:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    top: 0; left: 0;
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+.experience01{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 163px;
+    max-width: 100%;
+    z-index: 3;
+}
+#experience02{
+    max-width: 100%;
+    position: absolute;
+    margin-top: -506px;
+    margin-left: 269px;
+    z-index: 2; 
+}
+.experience_right{
+    width: 44%;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+}
+.experience_right .subtitle{
+    margin-top: 133px;
+    margin-right: 61px;
+    margin-bottom: 27px;
+    font-size: 16px;
+    line-height: 21px;    
+    color: #00ADEE;
+}
+.experience_right h3{
+    font-size: 28px;
+    line-height: 37px;
+    color: #333333;
+    margin-bottom: 27px;
+}
+.experience_right_text{
+    width: 407px;
+    height: 185px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #4F4F4F;
+    margin-bottom: 22px;
+}
+
