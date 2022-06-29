@@ -1,0 +1,201 @@
+*{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+}
+main{
+    background-color: #F4F6F9;
+}
+.wrapper{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 21px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.wrapper h1{
+    font-size: 40px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+
+    color: #111111;
+    margin-bottom: 20px;
+}
+.sword{
+    width: 300px;
+    height: 200px;
+    background-color: rgb(20, 19, 19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.sword__wrapper{
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+
+}
+.line, .line2 {
+    height:8px ;
+    background-color: rgb(20, 19, 19);
+    width: 20px;
+    margin-left: 25px;
+} 
+.line2{
+    margin-left: 105px;
+    animation-name: sword;
+}
+.one, .two, .three  {
+    background: rgb(255 255 255 );
+    width: 150px;
+    height: 7px;
+} 
+.sword__wrapper:hover .one{
+    color: rgb(255 255 255 );
+    animation-name: line1;
+    animation-duration: 1s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+.sword__wrapper:hover .two{
+    color: rgb(255 255 255 );
+    animation-name: line2;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.sword__wrapper:hover .three {
+    color: rgb(255 255 255 );
+    animation-name: line3;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+.wrapper:hover .line2 .line3{
+    animation-play-state: paused;
+}
+@keyframes line1 {
+    0%   
+    {
+        background-color: rgb(255 255 255 );
+    }
+    100% 
+    {
+        background-color: rgb(0, 0, 0);
+    }
+}
+@keyframes line2 {
+    0%   
+    {
+        background-color: rgb(255 255 255 );
+    }
+    100% 
+    {
+        background: linear-gradient(-59deg, #ffdd00 -70%, #fb00ff 196% );
+        filter: blur(2px);
+        opacity: var(0.55);
+        transform: rotate(60deg);
+    }
+  }
+  @keyframes line3 {
+    0%   
+    {
+        background-color: rgb(255 255 255 );
+    }
+    100% 
+    {
+        background: linear-gradient(-59deg, #60efff -70%, #00ff87 196% );
+        transform: translate3d(2px, 0px, 0) scale(1.01);
+        filter: blur(2px);
+        opacity: var(0.55);
+        transform: rotate(-60deg);
+        margin-top: -40px;
+    }
+}
+
+/* Newton's pendulum */
+.pendulum{
+    width: 800px;
+    height: 400px;
+    background-color: rgba(189, 172, 138, 0.782);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 150px;
+    cursor: pointer;
+    
+}
+.circle{
+    background: linear-gradient(-59deg, #ffdd00 -50%, #fb00ff 196% );
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    margin-right: 5px;
+
+}
+.circle::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    right: 0;
+    bottom: 0;
+    margin-left: 10px;
+    box-shadow: 1px 20px 8px 3px rgba(203, 24, 75, 0.12);
+}
+
+.pendulum:hover .circle:first-child{
+    animation-name: Newton_pendulum_left;
+    animation-duration: 0.5s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Newton_pendulum_left {
+    0%   
+    {
+        background: linear-gradient(-59deg, #ffdd00 -50%, #fb00ff 196% );
+    }
+    100% 
+    {
+        background: linear-gradient(-59deg, #dc558d -70%, #ce8585 196% );
+        transform: translate3d(2px, 0px, 0) scale(1.01);
+        transform: translate(-70px, -70px);
+    }
+}
+.pendulum:hover .circle:last-child{
+    animation-name: Newton_pendulum_right;
+    animation-duration: 0.5s;
+    animation-timing-function:linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 0.5s;
+}
+@keyframes Newton_pendulum_right {
+    0%   
+    {
+        background: linear-gradient(-59deg, #ffdd00 -50%, #fb00ff 196% );
+    }
+    100% 
+    {
+        background: linear-gradient(-59deg, #eec634 -70%, #ecb221 196% );
+        transform: translate3d(2px, 0px, 0) scale(1.01);
+        transform: translate(70px, -70px);
+    }
+}
