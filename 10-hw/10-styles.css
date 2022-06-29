@@ -161,7 +161,7 @@ main{
 .pendulum:hover .circle:first-child{
     animation-name: Newton_pendulum_left;
     animation-duration: 0.5s;
-    animation-timing-function:linear;
+    animation-timing-function:ease;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -181,7 +181,7 @@ main{
 .pendulum:hover .circle:last-child{
     animation-name: Newton_pendulum_right;
     animation-duration: 0.5s;
-    animation-timing-function:linear;
+    animation-timing-function:ease;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
     animation-direction: alternate;
