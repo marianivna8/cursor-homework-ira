@@ -25,12 +25,14 @@
     flex-direction: row;
     padding-bottom: 21px;
     font-weight: 500;
+    align-items: center;
 }
 .title p{
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
     padding-right: 26px;
+    padding-bottom: 0;
 }
 .name{
     font-weight: 700;
@@ -71,7 +73,15 @@
     align-items: center;
     justify-content: center;
 }
-
+.dots{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dots img{
+    padding-right: 4px;
+}
 .number p{
     padding-right: 35px;
     color: #262626;
@@ -95,20 +105,30 @@
     line-height: 21px;
     color: #133768; 
 }
-/* .squares{
-    background: url(./);
-    width: 82px;
-    height: 82px;
-    border-radius: 50%;
-    border: 3px solid #DBDBDB;
-    margin-bottom: 11px;
+.square_title{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-} */
+    align-items: center;
+    padding-bottom: 21px;
+}
+.square_title p{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.09em;
+}
+.user{
+    margin-left: 65px;
+}
+.square{
+    background: url(./img/square.svg);
+    width: 297px;
+    height: 297px;
+    margin-bottom: 25px;
+}
 .col-md-4{
     background-image: url(./img/square.svg);
-    width: 197px;
-    height: 197px;
+    width: 297px;
+    height: 297px;
 }

@@ -16,17 +16,13 @@
     "/> -->
 
 </head>
-<body>
+<body class="container-lg">
     <header>
         <nav class="navbar white">
-            <div class="container-xxl">
+            <div class="container-md">
                 <img src="./img/heder logo.svg" alt="logo">
                 <form class="d-flex justify-content-center" role="search">
                     <div class="form-group">
-                        <!-- <label for="search">Search</label>
-                        <svg width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M8.4375 9C8.50781 9 8.57812 8.98682 8.64844 8.96045C8.71875 8.93408 8.78027 8.8916 8.83301 8.83301C8.94434 8.72168 9 8.58984 9 8.4375C9 8.28516 8.94434 8.15332 8.83301 8.04199L7.1543 6.36328C7.40625 6.0293 7.60254 5.66016 7.74316 5.25586C7.88379 4.85156 7.9541 4.42676 7.9541 3.98145C7.9541 3.43066 7.8501 2.91357 7.64209 2.43018C7.43408 1.94678 7.1499 1.5249 6.78955 1.16455C6.4292 0.804199 6.00732 0.52002 5.52393 0.312012C5.04053 0.104004 4.52637 0 3.98145 0C3.43066 0 2.91357 0.104004 2.43018 0.312012C1.94678 0.52002 1.5249 0.804199 1.16455 1.16455C0.804199 1.5249 0.52002 1.94678 0.312012 2.43018C0.104004 2.91357 0 3.43066 0 3.98145C0 4.52637 0.104004 5.04053 0.312012 5.52393C0.52002 6.00732 0.804199 6.4292 1.16455 6.78955C1.5249 7.1499 1.94678 7.43408 2.43018 7.64209C2.91357 7.8501 3.43066 7.9541 3.98145 7.9541C4.42676 7.9541 4.85156 7.88379 5.25586 7.74316C5.66016 7.60254 6.0293 7.40625 6.36328 7.1543L8.04199 8.83301C8.09473 8.8916 8.15625 8.93408 8.22656 8.96045C8.29688 8.98682 8.36719 9 8.4375 9ZM3.98145 6.8291C3.58301 6.8291 3.21094 6.75439 2.86523 6.60498C2.51953 6.45557 2.21777 6.25195 1.95996 5.99414C1.70215 5.73633 1.49854 5.43457 1.34912 5.08887C1.19971 4.74316 1.125 4.37402 1.125 3.98145C1.125 3.58301 1.19971 3.21094 1.34912 2.86523C1.49854 2.51953 1.70215 2.21777 1.95996 1.95996C2.21777 1.70215 2.51953 1.49854 2.86523 1.34912C3.21094 1.19971 3.58301 1.125 3.98145 1.125C4.37402 1.125 4.74316 1.19971 5.08887 1.34912C5.43457 1.49854 5.73633 1.70215 5.99414 1.95996C6.25195 2.21777 6.45557 2.51953 6.60498 2.86523C6.75439 3.21094 6.8291 3.58301 6.8291 3.98145C6.8291 4.37402 6.75439 4.74316 6.60498 5.08887C6.45557 5.43457 6.25195 5.73633 5.99414 5.99414C5.73633 6.25195 5.43457 6.45557 5.08887 6.60498C4.74316 6.75439 4.37402 6.8291 3.98145 6.8291Z" fill="#8F8F8F"/>
-                        </svg>  -->
                         <input class="form-control me-2 text-center" type="search" placeholder="Search" aria-label="Search">
                     </div>
                 </form>
@@ -60,10 +56,10 @@
     </header> 
     <main>   
         <section class="description">
-            <div class="container-xxl">
+            <div class="container-md">
                 <div class="row">
                     <div class="col-sm-4 d-flex justify-content-center" >
-                        <img class="big__circle" src="./img/CIRCLE.svg" alt="big circle">
+                        <img class="big__circle" src="./img/circle.svg" alt="big circle">
                     </div>
                     <div class="col-sm-8">
                         <div class="title">
@@ -71,7 +67,7 @@
                             <div class="btn-group me-2" role="group" aria-label="First group">
                                 <button type="button" class="btn btn-primary">Follow</button>
                             </div>
-                            <div class="btn-group">
+                            <div class="btn-group me-16">
                                 <button
                                 type="button"
                                 class="btn btn-primary dropdown-toggle"
@@ -80,7 +76,11 @@
                                 <span class="visually-hidden">Toggle Dropdown</span>
                                 </button>
                             </div>
-                            
+                            <div class="dots">
+                                <img class="rounded-circle color=#262626 w-5 h-5" src="./img/dot.svg" alt="three dots">
+                                <img class="rounded-circle color=#262626 w-5 h-5" src="./img/dot.svg" alt="three dots">
+                                <img class="rounded-circle color=#262626 w-5 h-5" src="./img/dot.svg" alt="three dots">
+                            </div>
                         </div>
                         <div class="number d-flex">
                             <p> <b>79</b>posts</p>
@@ -95,7 +95,7 @@
             </div>
         </section>
         <section class="there_circles">
-            <div class="container-xxl">
+            <div class="container-md">
                 <div class="row">
                     <div class="col-5">
                         <div class="there_circles_wrapper">
@@ -115,30 +115,70 @@
                     </div>
 
                     <div class="col-sm-7"></div>
-                    <hr color=#DBDBDB>
                 </div>   
             </div>
         </section>
+        <hr color=#DBDBDB>
         <section class="squares">
-            <div class="container-xxl">
+            <div class="container-md">
                 <div class="row">
-                  <div class="col align-self-start"></div>
-                  <div class="col align-self-center">
-                    One of three columns
-                  </div>
-                  <div class="col align-self-end"> </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-4">
-                        <div></div>
+                    <div class="col-12">
+                        <div class="square_title">
+                            <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6333 0H0.366667C0.171111 0 0 0.171111 0 0.366667V10.6333C0 10.8289 0.171111 11 0.366667 11H10.6333C10.8289 11 11 10.8289 11 10.6333V0.366667C11 0.171111 10.8289 0 10.6333 0ZM0.733333 0.733333H3.42222V3.42222H0.733333V0.733333ZM0.733333 4.15556H3.42222V6.84444H0.733333V4.15556ZM3.42222 10.2667H0.733333V7.57778H3.42222V10.2667ZM6.84444 10.2667H4.15556V7.57778H6.84444V10.2667ZM6.84444 6.84444H4.15556V4.15556H6.84444V6.84444ZM6.84444 3.42222H4.15556V0.733333H6.84444V3.42222ZM10.2667 10.2667H7.57778V7.57778H10.2667V10.2667ZM10.2667 6.84444H7.57778V4.15556H10.2667V6.84444ZM10.2667 3.42222H7.57778V0.733333H10.2667V3.42222Z" fill="#262626"/>
+                            </svg>
+                            <p class="text-center text-uppercase color=#262626 ms-2 mb-0  me-50">posts</p> 
+                            <svg class="user" width="12" height="12" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.59575 1.18066H6.99787C6.88085 1.18066 6.76383 1.1339 6.67021 1.04038L5.73404 0.105207C5.59362 -0.0350691 5.38298 -0.0350691 5.24255 0.105207L4.30638 1.04038C4.21277 1.1339 4.09574 1.18066 3.97872 1.18066H1.40426C0.631915 1.18066 0 1.8119 0 2.58342V9.59724C0 10.3688 0.631915 11 1.40426 11H9.59575C10.3681 11 11 10.3688 11 9.59724V2.58342C11 1.8119 10.3681 1.18066 9.59575 1.18066ZM2.71489 10.2986C2.57447 10.2986 2.45745 10.1583 2.48085 10.0181C2.64468 9.26993 3.3 8.70882 4.07234 8.70882H6.88085C7.6766 8.70882 8.33191 9.26993 8.47234 10.0181C8.49574 10.1583 8.37872 10.2986 8.2383 10.2986H2.71489ZM10.2979 9.59724C10.2979 9.99469 9.99362 10.2986 9.59575 10.2986H9.45532C9.3383 10.2986 9.24468 10.2051 9.22128 10.0882C9.08085 8.91923 8.09787 8.00744 6.90426 8.00744H4.09574C2.90213 8.00744 1.89574 8.91923 1.77872 10.0882C1.75532 10.2051 1.6617 10.2986 1.54468 10.2986H1.40426C1.00638 10.2986 0.702128 9.99469 0.702128 9.59724V2.58342C0.702128 2.18597 1.00638 1.88204 1.40426 1.88204H4.00213C4.30638 1.88204 4.61064 1.76514 4.82128 1.53135L5.5 0.853347L6.17872 1.53135C6.38936 1.74176 6.69362 1.88204 6.99787 1.88204H9.59575C9.99362 1.88204 10.2979 2.18597 10.2979 2.58342V9.59724ZM5.5 2.81722C4.25957 2.81722 3.25319 3.82253 3.25319 5.06164C3.25319 6.30074 4.25957 7.30606 5.5 7.30606C6.74043 7.30606 7.74681 6.30074 7.74681 5.06164C7.74681 3.82253 6.74043 2.81722 5.5 2.81722ZM5.5 6.5813C4.65745 6.5813 3.95532 5.90329 3.95532 5.03826C3.95532 4.1966 4.63404 3.49522 5.5 3.49522C6.36596 3.49522 7.04468 4.17322 7.04468 5.03826C7.04468 5.87991 6.34255 6.5813 5.5 6.5813Z" fill="#8E8E8E"/>
+                            </svg>
+                            <p class="text-center text-uppercase color=#8F8F8F ms-2 mb-0">tagget</p>  
+                        </div>
                     </div>
-                    <div class="col-md-4" style="width: 100px; height: 100px; color: red"></div>
-                    <div class="col-md-4" style="width: 100px; height: 100px; color: red"></div>
-
                 </div>
-
-
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-sm-12">
+                        <div class="square"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
