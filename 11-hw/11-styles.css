@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Helvetica Neue';
+    font-weight: 400;
+    src: url(./fonts/HelveticaNeue.ttf);
+}
+*{
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+}
+.icons svg{
+     margin-left: 14px; 
+}
+.description{
+    padding-top: 29px;
+    padding-bottom: 52px;  
+}
+.col-sm-8{
+    margin: 0%;
+}
+.title{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 21px;
+    font-weight: 500;
+}
+.title p{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    padding-right: 26px;
+}
+.name{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;    
+    color: #262626;
+}
+.there_circles{
+    padding-bottom: 55px;
+}
+.there_circles_wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.there_circles_wrapper_one{
+    display: flex;
+    flex-direction: column;
+    margin-right: 34px;
+}
+.circle_one{
+    background: url(./img/circle.svg);
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    border: 3px solid #DBDBDB;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.number p{
+    padding-right: 35px;
+    color: #262626;
+    margin: 0px;
+    margin-bottom: 21px;
+}
+.number b{
+    margin-right: 5px;
+}
+.subtitle{
+    margin: 0;
+}
+.content{
+    width: 65%;
+    margin: 0px;
+}
+.col-sm-8 a{
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    color: #133768; 
+}
+/* .squares{
+    background: url(./);
+    width: 82px;
+    height: 82px;
+    border-radius: 50%;
+    border: 3px solid #DBDBDB;
+    margin-bottom: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+.col-md-4{
+    background-image: url(./img/square.svg);
+    width: 197px;
+    height: 197px;
+}
