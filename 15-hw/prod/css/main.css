@@ -22,7 +22,7 @@ body {
 .wrapper {
     width: 100%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 15px;а
     max-width: 1126px;
 }
 
@@ -170,7 +170,7 @@ button {
 .main-screen {
     min-height: 1px;
     height: 700px;
-    background-image: url("../img/main-screen-bg.jpg");
+    background-image: url("../img/main-screen-bg.avif");
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
