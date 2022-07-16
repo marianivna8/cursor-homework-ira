@@ -495,7 +495,7 @@ button {
     width: 90%;
     max-width: 900px;
     margin: 50px auto;
-    
+}   
 
 .reviews .review-text {
     display: inline-block;
@@ -505,7 +505,6 @@ button {
     vertical-align: top;
     
 }
-
 .reviews .main-review-img {
     width: calc(30% - 15px);
     margin-right: 10px;
@@ -514,11 +513,10 @@ button {
     display: inline-block;
     height: auto;
 }
-
 .reviews .review-author {
     display: block;
-    text-align: right;
-    margin: 10px 0 auto 0;
+    text-align: center;
+    margin: 20px 0 auto 0;
     vertical-align: top;
     padding-top: 15px;
 }
@@ -529,9 +527,8 @@ button {
 .reviews .review-author .ava {
     position: relative;
     top: -15px;
-    margin-right: 10px;
+    margin-right: 20px;
 }
-
 .delivery .h2 {
     margin-bottom: 50px;
 }
