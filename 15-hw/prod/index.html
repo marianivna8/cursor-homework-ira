@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="loader">
+        <div class="lds-hourglass"></div>
+    </div>
 <header>
     <div class="wrapper">
         <img src="img/logo.png" alt="Logo Avtoparktronik" class="logo">
@@ -30,7 +33,7 @@
             <button class="btn-order">Заказать</button>
         </div>
         <div class="right-block">
-            <img src="img/product.avif" alt="" class="main-image">
+            <img src="img/product.png" alt="" class="main-image">
             <div class="price">
                 <div class="old-price">6999 грн.</div>
                 <div class="new-price">3999 грн.</div>
@@ -168,7 +171,7 @@
             <p>ремонт бампера стоит от</p>
             <p class="cost"><span class="yellow">6000</span> рублей</p>
             <img src="img/girl-in-car.avif" alt="" class="full-width">
-            <img src="img/broken-car1.jpg" alt="" class="half-width">
+            <img src="img/broken-car1.jpg"  loading=”lazy”  alt="" class="half-width">
             <img src="img/broken-car2.avif" alt="" class="half-width">
         </div>
         <div class="right-block">
@@ -183,31 +186,86 @@
 </section>
 <section class="reviews">
     <div class="wrapper">
-        <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
-        <img src="img/arrow-left.avif" alt="" class="arrow-left">
+         <h2 class="h2">отзывы о нашем <span class="yellow">видеопарктронике</span></h2>
+        <!-- <img src="img/arrow-left.avif" alt="" class="arrow-left"> -->
         <div class="review-slider">
             <div class="slide">
-                <img src="img/review1.avif" alt="" class="main-review-img">
-                <p class="review-text">
-                    Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
-                    дизайн
-                    уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
-                    года
-                    вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
-                    данные
-                    никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
-                    наткнулся на
-                    то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
-                    восторге от
-                    данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
-                    зеркало
-                    любой машины, вообщем то что доктор прописал!
-                </p>
-                <div class="review-author"><img src="img/review1-ava.a" alt="" class="ava"><b>Константин</b><i>г.
-                    Днепропетровск</i></div>
+                <div class='slide__wrapper'>
+                    <p class="review-text">
+                        Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                        дизайн
+                        уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                        года
+                        вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                        данные
+                        никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                        наткнулся на
+                        то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                        восторге от
+                        данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                        зеркало
+                        любой машины, вообщем то что доктор прописал!
+                    </p>
+                    <img src="img/review1.avif"  loading=”lazy”  alt="" class="main-review-img">
+                </div>
+                <div class="review-author">
+                    <p> <b>Константин</b><i>г.Днепропетровск</i></p>
+                    <img src="./img/review1-ava.avif" alt="" class="ava">
+                </div>
             </div>
+
+            <div class="slide">
+                <div class='slide__wrapper'>
+                    <p class="review-text">
+                        Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                        дизайн
+                        уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                        года
+                        вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                        данные
+                        никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                        наткнулся на
+                        то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                        восторге от
+                        данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                        зеркало
+                        любой машины, вообщем то что доктор прописал!
+                    </p>
+                    <img src="img/review1.avif"  loading=”lazy”  alt="" class="main-review-img">
+                </div>
+                <div class="review-author">
+                    <p> <b>Константин</b><i>г.Київ</i></p>
+                    <img src="./img/review1-ava.avif" alt="" class="ava">
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class='slide__wrapper'>
+                    <p class="review-text">
+                        Опять долгие ночи в интернете в поисках обзоров и сравнений… Проблема таких устройств что у них либо
+                        дизайн
+                        уродский огромный — в полтора раза больше штатного, а я вообще не люблю заднее зеркало, так как за 3
+                        года
+                        вождения рабочих "каблучков" типа Кангу и Берлинго вообще привык без него обходится, либо тех.
+                        данные
+                        никакие — камеры очень плохого качества… Уже думал что печаль… :( Но вот за пару дней поисков
+                        наткнулся на
+                        то о чем мечтал действительно — HD Recorder. Нашел его у одного из драйвечан, и у других. Все в
+                        восторге от
+                        данного устройства. Качество видео очень хорошее, в машине не видно его вообще, крепления на штатное
+                        зеркало
+                        любой машины, вообщем то что доктор прописал!
+                    </p>
+                    <img src="img/review1.avif"  loading=”lazy”  alt="" class="main-review-img">
+                </div>
+                <div class="review-author">
+                    <p> <b>Константин</b><i>г.Донецьк</i></p>
+                    <img src="./img/review1-ava.avif" alt="" class="ava">
+                </div>
+            </div>
+            
         </div>
-        <img src="img/arrow-right.avif" alt="" class="arrow-right">
+        <!-- <img src="img/arrow-right.avif" alt="" class="arrow-right"> -->
     </div>
 </section>
 <section class="delivery">
@@ -262,7 +320,7 @@
         <h2 class="h2">закажите свой видеопарктроник <span class="yellow">до конца дня</span>
             И <span class="yellow">получите в подарок</span> антибликовое стекло</h2>
         <div class="left-block">
-            <img src="img/product-reverse.avif" alt="">
+            <img src="img/product-reverse.avif"   loading=”lazy”  alt="">
             <span class="plus">+</span>
             <img src="img/gift-reverse.avif" alt="">
             <div class="price">
@@ -328,6 +386,12 @@
         player.stopVideo();
     }
 </script>
+<link rel="stylesheet" href="./slick/slick.css">
+<link rel="stylesheet" href="./slick/slick-theme.css">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="./slick/slick.min.js"></script>
+<script src="./js/main.js"></script>
 // Passive event listeners
 jQuery.event.special.touchstart = {
     setup: function( _, ns, handle ) {
