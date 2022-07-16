@@ -171,7 +171,7 @@
             <p>ремонт бампера стоит от</p>
             <p class="cost"><span class="yellow">6000</span> рублей</p>
             <img src="img/girl-in-car.avif" alt="" class="full-width">
-            <img src="img/broken-car1.jpg"  loading=”lazy”  alt="" class="half-width">
+            <img src="img/broken-car1.jpg"  alt="" class="half-width">
             <img src="img/broken-car2.avif" alt="" class="half-width">
         </div>
         <div class="right-block">
@@ -206,7 +206,7 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <img src="img/review1.avif"  loading=”lazy”  alt="" class="main-review-img">
+                    <img src="img/review1.avif"  alt="" class="main-review-img">
                 </div>
                 <div class="review-author">
                     <p> <b>Константин</b><i>г.Днепропетровск</i></p>
@@ -231,7 +231,7 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <img src="img/review1.avif"  loading=”lazy”  alt="" class="main-review-img">
+                    <img src="img/review1.avif" alt="" class="main-review-img">
                 </div>
                 <div class="review-author">
                     <p> <b>Константин</b><i>г.Київ</i></p>
@@ -256,7 +256,7 @@
                         зеркало
                         любой машины, вообщем то что доктор прописал!
                     </p>
-                    <img src="img/review1.avif"  loading=”lazy”  alt="" class="main-review-img">
+                    <img src="img/review1.avif" alt="" class="main-review-img">
                 </div>
                 <div class="review-author">
                     <p> <b>Константин</b><i>г.Донецьк</i></p>
@@ -320,7 +320,7 @@
         <h2 class="h2">закажите свой видеопарктроник <span class="yellow">до конца дня</span>
             И <span class="yellow">получите в подарок</span> антибликовое стекло</h2>
         <div class="left-block">
-            <img src="img/product-reverse.avif"   loading=”lazy”  alt="">
+            <img src="img/product-reverse.avif"  alt="">
             <span class="plus">+</span>
             <img src="img/gift-reverse.avif" alt="">
             <div class="price">
@@ -392,16 +392,5 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="./slick/slick.min.js"></script>
 <script src="./js/main.js"></script>
-// Passive event listeners
-jQuery.event.special.touchstart = {
-    setup: function( _, ns, handle ) {
-        this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
-    }
-};
-jQuery.event.special.touchmove = {
-    setup: function( _, ns, handle ) {
-        this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
-    }
-};
 </body>
 </html>
