@@ -578,13 +578,33 @@ button {
     margin-bottom: 50px;
     clear: both;
 }
-
+.adv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .advantages .adv-title {
     margin-top: 15px;
     font-family: "HelveticaNeueBold";
     font-size: 18px;
 }
-
+.adv1, .adv2, .adv3{
+    width: 55px;
+    height: 65px;
+    background: url("../img/css_sprites.png") no-repeat;
+}
+.adv1{
+    background-position: -10px -10px ;
+}
+.adv2{
+    background-position: -85px -10px ;
+}
+.adv3{
+    width: 60px;
+    height: 54px;
+    background-position: -160px -10px ;
+}
 .last-screen {
     clear: both;
     text-align: center;
