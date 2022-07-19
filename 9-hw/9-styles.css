@@ -22,6 +22,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 21px;
+    -left: 161px;
 }
 
 .main__logo{
@@ -78,9 +79,7 @@
 }
 .experience__left{
     width: 62%;
-    background-image: url(./img/experience\ 805.svg);
-    /* background-image: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%),
-    rgba(255, 255, 255, 0.5) url(./img/experience\ 805.svg); */
+    background: linear-gradient(270deg, #FFFFFF 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5) url(./img/experience\ 805.svg);
     background-size: cover;
     display: relative;
     padding: 0;
@@ -98,9 +97,13 @@
     margin-top: 289px;
     z-index: 1;
 }
+.experience__mobile{
+    display: none;
+}
 .experience__wrapper .container__content{
     width: 38%;
     height: 100%;
+    padding-left: -1px;
     margin-top: 133px;
     padding-bottom: 117px;
     font-weight: 700;
@@ -108,7 +111,7 @@
     line-height: 21px;
     color: #00ADEE;
 }
-.container__content .subtitle {
+.container__content  .subtitle{
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
@@ -137,25 +140,10 @@
     margin: 0;
 }
 .benefits .container{
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 0px 0px;
-    max-width: 1440px;
+    display: flex;
+    padding-bottom: 154px;
+}
 
-}
-.container__content{
-    grid-area: 1 / 1 / 2 / 2; 
-    padding-bottom: 171px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px;
-    color: #00ADEE;
-    z-index: 2;
-    padding-top: 217px;
-    padding-left: 162px;
-    width: 170%;
-}
 .container__content > h2{
     font-family: 'Lato';
     font-style: normal;
@@ -165,12 +153,25 @@
     color: #333333;
     padding-bottom: 27px;
     z-index:3;
+    
 }
 .container__content__text{
     padding-bottom: 54px;
+    width: 47%;
 }
-.benefits__bg{
-    grid-area: 1 / 1 / 2 / 4;
+.benefits .container__content  {
+    z-index: 2;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #00ADEE;
+    padding-top: 217px;
+}
+.benefits__img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 0;
 }
 /* section 4 */
 .futures{
